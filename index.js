@@ -14,12 +14,7 @@ let tripId = 0;
      }.bind(this))
    };
    passengers(){
-     return store.passengers.filter(function(passenger){
-       this.trips().forEach(function(trip) {
-         return passenger.passengerId === trip.passengerId;
-       })
-
-     }.bind(this))
+     return this.trip().map(trip => trip.passenger()))
    }
  }
 
