@@ -29,6 +29,7 @@ class Passenger {
       return trip.passengerId === this.id;
     }.bind(this))
   }
+  driver(){}
 }
 class Trip {
   constructor(driver, passenger){
