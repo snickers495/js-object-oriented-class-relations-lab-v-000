@@ -12,6 +12,9 @@ let tripId = 0;
      return store.trips.filter(function(trip) {
        return trip.driverId === this.id;
      }.bind(this))
+   };
+   passengers(){
+     return store.passengers.filter(function(trip){})
    }
  }
 
