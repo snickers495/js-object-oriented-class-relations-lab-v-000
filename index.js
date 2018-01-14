@@ -1,6 +1,6 @@
 let store = {drivers: [], passengers: []};
-let driverId = 0
-let passengerId = 0
+let driverId = 0;
+let passengerId = 0;
  class Driver {
    constructor(name) {
      this.name = name;
@@ -11,7 +11,7 @@ let passengerId = 0
 
 class Passenger {
   constructor(name) {
-    this.name = name; 
-    this.id = 
+    this.name = name;
+    this.id = ++passengerId;
   }
 }
