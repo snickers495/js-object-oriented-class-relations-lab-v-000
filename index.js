@@ -14,7 +14,7 @@ let tripId = 0;
      }.bind(this))
    };
    passengers(){
-     return this.trip().map(trip => trip.passenger())
+     return this.trips().map(trip => trip.passenger())
    }
  }
 
