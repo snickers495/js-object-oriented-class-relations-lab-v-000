@@ -29,7 +29,9 @@ class Passenger {
       return trip.passengerId === this.id;
     }.bind(this))
   }
-  driver(){}
+  driver(){
+    return this.trips().map(trip => trip.driver())
+  }
 }
 class Trip {
   constructor(driver, passenger){
