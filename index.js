@@ -7,3 +7,7 @@ let driverId = 0
      store.drivers.push(this);
    }
  }
+
+class Passenger {
+  
+}
