@@ -4,5 +4,4 @@ let store = {drivers: []}
      this.name = name;
      store.drivers.push(this);
    }
-   
  }
