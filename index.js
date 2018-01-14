@@ -16,7 +16,7 @@ let tripId = 0;
    passengers(){
      return store.passengers.filter(function(passenger){
        this.trips().forEach(function(trip) {
-         return passenger.passengerId === trip.id
+         return passenger.passengerId === trip.passengerId;
        })
 
      })
