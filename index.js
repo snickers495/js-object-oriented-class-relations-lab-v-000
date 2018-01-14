@@ -19,7 +19,7 @@ let tripId = 0;
          return passenger.passengerId === trip.passengerId;
        })
 
-     })
+     }.bind(this))
    }
  }
 
