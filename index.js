@@ -10,8 +10,8 @@ let tripId = 0;
    }
    trips(){
      return store.trips.filter(function(driver) {
-       return driver.id === this.driverId
-     })
+       return driver.id === this.driverId;
+     }.bind(this))
    }
  }
 
