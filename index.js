@@ -14,7 +14,12 @@ let tripId = 0;
      }.bind(this))
    };
    passengers(){
-     return store.passengers.filter(function(trip){})
+     return store.passengers.filter(function(passenger){
+       this.trips().forEach(function(trip) {
+         return passenger.passengerId === trip.id
+       })
+
+     })
    }
  }
 
